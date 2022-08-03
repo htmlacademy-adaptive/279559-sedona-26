@@ -2,16 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона. Отзывы</title>
     <base href="https://htmlacademy-adaptive.github.io/279559-sedona-26/2/">
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта с надписью City of Sedona.">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
@@ -37,136 +34,122 @@
           </li>
         </ul>
       </nav>
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта с надписью City of Sedona.">
+      </a>
     </header>
 
     <main class="main-container">
       <header class="promo promo--size-s">
         <img class="promo__text promo__text--size-s" src="img/sedona_text.svg" alt="Welcome to the gorgeous Sedona!">
       </header>
-      <h1 class="main-container__title">Оставьте свой отзыв</h1>
-      <div class="feedback__preview">
-        <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
+      <section class="feedback">
+        <div class="feedback__preview preview">
+          <h1 class="preview__title">Оставьте свой отзыв</h1>
+          <p class="preview__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
 
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="feedback-form__group feedback-personals-group">
-          <legend class="feedback-personals-group__title">Представьтесь:</legend>
-          <ul class="feedback-personals-group__list">
-            <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control personals-field">
-                <span class="personals-field__control-label">Имя*:</span>
-                <input class="personals-field__control-input" type="text" name="name" placeholder="Пётр" required>
-              </label>
-            </li>
-            <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control personals-field">
-                <span class="personals-field__control-label">Фамилия*:</span>
-                <input class="personals-field__control-input" type="text" name="surname" placeholder="Пустота" required>
-              </label>
-            </li>
-            <li class="feedback-personals-group__item">
-              <label class="feedback-personals-group__control personals-field">
-                <span class="personals-field__control-label">Отчество*:</span>
-                <input class="personals-field__control-input" type="text" name="midname" placeholder="Викторович" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="feedback-form__group feedback-personals-group">
+            <legend class="feedback-personals-group__title">Представьтесь:</legend>
 
-        <fieldset class="feedback-form__group feedback-contacts-group">
-          <legend class="feedback-contacts-group__title">Контактная информация:</legend>
-          <ul class="feedback-contacts-group__list">
-            <li class="feedback-contacts-group__item">
-              <label class="feedback-contacts-group__control contacts-field contacts-field--phone">
-                <span class="contacts-field__control-label">Контактный телефон*:</span>
-                <input class="contacts-field__control-input" type="text" name="phone" placeholder="Введите телефон" required>
-              </label>
-            </li>
-            <li class="feedback-contacts-group__item">
-              <label class="feedback-contacts-group__control contacts-field contacts-field--email">
-                <span class="contacts-field__control-label">Электронная почта*:</span>
-                <input class="contacts-field__control-input" type="text" name="email" placeholder="Введите e-mail" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <label class="feedback-personals-group__control personals-field">
+              <span class="personals-field__control-label">Имя*:</span>
+              <input class="personals-field__control-input" type="text" name="name" placeholder="Пётр" required>
+            </label>
 
-        <fieldset class="feedback-form__group feedback-impression-group">
-          <legend class="feedback-impression-group__title">Ваше общее впечатление:</legend>
-          <ul class="feedback-impression-group__list">
-            <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control impression-field">
-                <input class="impression-field__control-input impression-field__control-input--checked" type="radio" name="impression" value="good" checked>
-                <span class="impression-field__control-label">Скорее положительное</span>
-              </label>
-            </li>
-            <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control impression-field">
-                <input class="impression-field__control-input" type="radio" name="impression" value="bad">
-                <span class="impression-field__control-label">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="feedback-impression-group__item">
-              <label class="feedback-impression-group__control impression-field">
-                <input class="impression-field__control-input" type="radio" name="impression" value="dont-know">
-                <span class="impression-field__control-label">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <label class="feedback-personals-group__control personals-field">
+              <span class="personals-field__control-label">Фамилия*:</span>
+              <input class="personals-field__control-input" type="text" name="surname" placeholder="Пустота" required>
+            </label>
 
-        <fieldset class="feedback-form__group feedback-attraction-group">
-          <legend class="feedback-attraction-group__title">Ваше общее впечатление:</legend>
-          <ul class="feedback-attraction-group__list">
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="devil-bridge" checked>
-                <span class="attraction-field__control-label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="mountain-bell" checked>
-                <span class="attraction-field__control-label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="slide-park" checked>
-                <span class="attraction-field__control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="feedback-attraction-group__item">
-              <label class="feedback-attraction-group__control attraction-field">
-                <input class="attraction-field__control-input" type="checkbox" name="red-rocks">
-                <span class="attraction-field__control-label">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <label class="feedback-personals-group__control personals-field">
+              <span class="personals-field__control-label">Отчество*:</span>
+              <input class="personals-field__control-input" type="text" name="midname" placeholder="Викторович" required>
+            </label>
 
-        <fieldset class="feedback-form__group feedback-description-group">
-          <legend class="feedback-description-group__title">Опишите свои эмоции:</legend>
-          <label class="feedback-description-group__control description-field">
-            <textarea class="description-field__control-input" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
-          </label>
-        </fieldset>
+          </fieldset>
 
-        <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
-        <span class="feedback-form__note">*Обязательные поля</span>
-      </form>
+          <fieldset class="feedback-form__group feedback-contacts-group">
+            <legend class="feedback-contacts-group__title">Контактная информация:</legend>
 
+            <label class="feedback-contacts-group__control contacts-field contacts-field--phone">
+              <span class="contacts-field__control-label">Контактный телефон*:</span>
+              <input class="contacts-field__control-input" type="text" name="phone" placeholder="Введите телефон" required>
+            </label>
+
+            <label class="feedback-contacts-group__control contacts-field contacts-field--email">
+              <span class="contacts-field__control-label">Электронная почта*:</span>
+              <input class="contacts-field__control-input" type="text" name="email" placeholder="Введите e-mail" required>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="feedback-form__group feedback-impression-group">
+            <legend class="feedback-impression-group__title">Ваше общее впечатление:</legend>
+
+            <label class="feedback-impression-group__control impression-field">
+              <input class="impression-field__control-input impression-field__control-input--checked" type="radio" name="impression" value="good" checked>
+              <span class="impression-field__control-label">Скорее положительное</span>
+            </label>
+
+            <label class="feedback-impression-group__control impression-field">
+              <input class="impression-field__control-input" type="radio" name="impression" value="bad">
+              <span class="impression-field__control-label">Скорее отрицательное</span>
+            </label>
+
+            <label class="feedback-impression-group__control impression-field">
+              <input class="impression-field__control-input" type="radio" name="impression" value="dont-know">
+              <span class="impression-field__control-label">Затрудняюсь ответить</span>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="feedback-form__group feedback-attraction-group">
+            <legend class="feedback-attraction-group__title">Ваше общее впечатление:</legend>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="devil-bridge" checked>
+              <span class="attraction-field__control-label">Мост Дьявола</span>
+            </label>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="mountain-bell" checked>
+              <span class="attraction-field__control-label">Гора-Колокол</span>
+            </label>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input attraction-field__control-input--checked" type="checkbox" name="slide-park" checked>
+              <span class="attraction-field__control-label">Слайд-парк</span>
+            </label>
+
+            <label class="feedback-attraction-group__control attraction-field">
+              <input class="attraction-field__control-input" type="checkbox" name="red-rocks">
+              <span class="attraction-field__control-label">Красные скалы</span>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="feedback-form__group feedback-description-group">
+            <legend class="feedback-description-group__title">Опишите свои эмоции:</legend>
+            <label class="feedback-description-group__control description-field">
+              <textarea class="description-field__control-input" name="feedback-description" placeholder="Опишите подробно все свои восторги "></textarea>
+            </label>
+          </fieldset>
+
+          <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+          <span class="feedback-form__note">*Обязательные поля</span>
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <section class="hashtag">
-        <h3 class="visually-hidden">Хэштег Седоны</h3>
-        <a class="hashtag__link" href="#">
+      <div class="hashtag">
+        <a class="hashtag__link" href="#" aria-label="Хэштег Седоны">
           <span class="hashtag__text">#visitsedona</span>
         </a>
-      </section>
-      <section class="socials">
-        <h3 class="visually-hidden">Наши социальные сети</h3>
+      </div>
+      <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link" href="#">
@@ -187,14 +170,14 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="copyright">
-        <h3 class="visually-hidden">Сайт разработан в HTML Academy</h3>
+      </div>
+      <div class="copyright">
         <a class="copyright__link" href="#">
           <span class="copyright__text">Разработано</span>
+          <span class="visually-hidden">в HTML Academy</span>
           <svg class="copyright__logo" width="27" height="35" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
         </a>
-      </section>
+      </div>
     </footer>
 
     <div class="modal-container">
