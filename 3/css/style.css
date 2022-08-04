@@ -1,0 +1,270 @@
+.page {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.advantages-item__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-item__description {
+  text-transform: uppercase;
+}
+
+.advantages-item--advanced {
+  background-color: #81B3D2;
+  color: #ffffff;
+}
+
+.advantages-item__title--advanced {
+  color: #ffffff;
+}
+
+.advantages-item__photo {
+  display: block;
+}
+
+.advantages-sublist {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.advantages-sublist-item__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-sublist-item__description {
+  text-transform: uppercase;
+}
+
+.button {
+  display: block;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.checkbox-field__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.text-field__label {
+  text-transform: uppercase;
+}
+
+.text-field__input {
+  background-color: #F2F2F2;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.feedback-form__note {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.feedback-form-group__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2");
+  font-display: swap;
+}
+.gallery-item__title {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item__author {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item__likes {
+  font-weight: 700;
+}
+
+.hashtag__link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav {
+  background-color: #81B3D2;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-search__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-search__description {
+  text-transform: uppercase;
+}
+
+.modal-approve__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-approve__approve-message {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.modal-error__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-error__error-message {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.preview__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.preview__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.promo {
+  background-color: #81B3D2;
+}
+
+.radio-field__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.socials__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.socials__item {
+  background-color: #81b3d2;
+}
+
+.text-field__label {
+  text-transform: uppercase;
+}
+
+.text-field__input {
+  background-color: #F2F2F2;
+}
+/*# sourceMappingURL=style.css.map */
