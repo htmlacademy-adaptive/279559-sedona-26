@@ -1,9 +1,18 @@
 .page {
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+}
+
+.page__body {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -24,6 +33,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.advantages-item {
+  background-color: #EEEEEE;
 }
 
 .advantages-item__title {
@@ -51,6 +64,12 @@
   display: block;
 }
 
+.advantages-item__content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 .advantages-sublist {
   padding: 0;
   margin: 0;
@@ -72,12 +91,17 @@
 }
 
 .button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: block;
   background-color: #81b3d2;
+  border-width: 0;
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .checkbox-field__label {
@@ -92,7 +116,15 @@
 }
 
 .text-field__input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #F2F2F2;
+  border-width: 0;
+}
+
+.text-field__label {
+  display: block;
 }
 
 .copyright__link {
@@ -122,6 +154,10 @@
   color: #000000;
 }
 
+.feedback-form-group__field {
+  display: block;
+}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -136,6 +172,11 @@
   src: url("../fonts/ptsansbold.woff2");
   font-display: swap;
 }
+.gallery-item {
+  padding: 0;
+  margin: 0;
+}
+
 .gallery-item__title {
   color: #000000;
   font-weight: 700;
@@ -162,6 +203,14 @@
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.main-footer {
+  text-align: center;
+}
+
 .main-nav {
   background-color: #81B3D2;
 }
@@ -170,6 +219,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.main-nav__item {
+  text-align: center;
 }
 
 .main-nav__link {
@@ -184,6 +237,10 @@
   text-transform: uppercase;
 }
 
+.main-search {
+  text-align: center;
+}
+
 .main-search__title {
   font-size: 21px;
   line-height: 26px;
@@ -194,6 +251,13 @@
 
 .main-search__description {
   text-transform: uppercase;
+}
+
+.main-promo {
+  background-image: url("../img/jpg/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #81B3D2;
+  text-align: center;
 }
 
 .modal-approve__title {
@@ -224,6 +288,12 @@
   text-transform: uppercase;
 }
 
+.preview {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .preview__title {
   font-size: 18px;
   font-weight: 700;
@@ -240,6 +310,8 @@
 }
 
 .promo {
+  background-image: url("../img/jpg/back-desktop.jpg");
+  background-repeat: no-repeat;
   background-color: #81B3D2;
 }
 
@@ -251,12 +323,17 @@
 }
 
 .socials__list {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.socials__item {
+.socials__link {
+  display: block;
+  width: 48px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
@@ -265,6 +342,18 @@
 }
 
 .text-field__input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #F2F2F2;
+  border-width: 0;
+}
+
+.text-field__label {
+  display: block;
+}
+
+.textarea-field__input {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
