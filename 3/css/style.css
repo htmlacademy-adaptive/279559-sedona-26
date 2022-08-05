@@ -29,6 +29,10 @@
   overflow: hidden;
 }
 
+.advantages__wrapper {
+  margin-bottom: 38px;
+}
+
 .advantages-list {
   padding: 0;
   margin: 0;
@@ -185,8 +189,14 @@
   font-display: swap;
 }
 .gallery-item {
-  padding: 0;
+  padding: 24px 20px 25px 20px;
   margin: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gallery-item__caption-copyright {
+  margin-bottom: 16px;
 }
 
 .gallery-item__title {
@@ -204,6 +214,12 @@
 
 .gallery-item__likes {
   font-weight: 700;
+}
+
+.gallery-item__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .hashtag__link {
@@ -279,6 +295,10 @@
   text-transform: uppercase;
 }
 
+.main-search__wrapper {
+  margin-bottom: 49px;
+}
+
 .main-promo {
   height: 389px;
   background-image: url("../img/jpg/back-mobile.jpg");
@@ -347,6 +367,29 @@
   background-color: #81b3d2;
 }
 
+.promo--size-s {
+  position: relative;
+  height: 158px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.promo__text--size-s {
+  margin-top: 52px;
+}
+
+.promo--size-s::after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
 .radio-field__label {
   font-size: 18px;
   line-height: 26px;
@@ -389,5 +432,10 @@
 
 .textarea-field__input {
   width: 100%;
+}
+
+.video-item__video {
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
