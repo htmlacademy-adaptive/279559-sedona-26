@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page {
   height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -38,6 +39,14 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  counter-reset: item;
+}
+
+.advantages-item__title::after {
+  content: "№ " counter(item);
+  counter-increment: item;
+  display: block;
+  font-weight: 400;
 }
 
 .advantages-list::before {
