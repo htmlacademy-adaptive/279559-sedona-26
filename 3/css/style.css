@@ -1,10 +1,10 @@
 .page {
   height: 100%;
   font-family: "PT Sans", sans-serif;
+  color: #333333;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
 }
 
 .page__body {
@@ -50,11 +50,11 @@
 .advantages-item__title {
   margin: 0;
   margin-bottom: 11px;
+  color: #000000;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .advantages-item__description {
@@ -83,6 +83,22 @@
   color: #ffffff;
 }
 
+.advantages-item__content-wrapper:first-of-type {
+  padding: 71px 20px 40px 18px;
+}
+
+.advantages-item--advanced:first-child::before {
+  position: absolute;
+  top: -1px;
+  display: block;
+  width: 100%;
+  height: 37px;
+  background-image: url("../../img/white-devider-main.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
 .advantages-sublist {
   padding: 0;
   padding-top: 15px;
@@ -100,7 +116,7 @@
 
 .advantages-sublist-item:nth-child(1)::before {
   display: block;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../../img/icon-house.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 39px;
@@ -110,7 +126,7 @@
 
 .advantages-sublist-item:nth-child(2)::before {
   display: block;
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 40px;
@@ -120,7 +136,7 @@
 
 .advantages-sublist-item:nth-child(3)::before {
   display: block;
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 32px;
@@ -131,11 +147,11 @@
 .advantages-sublist-item__title {
   margin: 0;
   margin-bottom: 16px;
+  color: #000000;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .advantages-sublist-item__description {
@@ -184,10 +200,10 @@
 }
 
 .checkbox-field__label {
+  color: #000000;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
 }
 
 .text-field:not(:last-child) {
@@ -217,20 +233,20 @@
 
 .copyright__text {
   margin-right: 5px;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .feedback-form__note {
   display: block;
   padding-right: 20px;
+  text-transform: uppercase;
+  text-align: right;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
-  text-transform: uppercase;
-  text-align: right;
 }
 
 .form-group {
@@ -246,12 +262,12 @@
 
 .form-group__title {
   padding-top: 24px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .form-group__field {
@@ -278,14 +294,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans.woff2");
+  src: url("../../fonts/ptsans.woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2");
+  src: url("../../fonts/ptsansbold.woff2");
   font-display: swap;
 }
 .gallery-item {
@@ -322,12 +338,12 @@
 }
 
 .hashtag__link {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .location__image {
@@ -395,12 +411,12 @@
   padding-bottom: 12px;
   background-color: #81b3d2;
   color: #ffffff;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .main-search {
@@ -427,7 +443,7 @@
 .main-promo {
   position: relative;
   min-height: 389px;
-  background-image: url("../img/jpg/back-mobile.jpg");
+  background-image: url("../../img/jpg/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #81b3d2;
@@ -445,7 +461,7 @@
   display: block;
   width: 100%;
   height: 57px;
-  background-image: url("../img/intro-triangle-big.svg");
+  background-image: url("../../img/intro-triangle-big.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -459,19 +475,20 @@
 .modal-approve__title {
   margin: 0;
   margin-bottom: 36px;
+  color: #000000;
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .modal-approve__approve-message {
   margin: 0;
   margin-bottom: 50px;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .modal-error {
@@ -482,51 +499,64 @@
 .modal-error__title {
   margin: 0;
   margin-bottom: 36px;
+  color: #000000;
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .modal-error__error-message {
   margin: 0;
   margin-bottom: 28px;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .preview {
   text-align: center;
-  padding: 32px 20px 16px 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .preview__title {
   margin: 0;
   margin-bottom: 35px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .preview__description {
   margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
-.preview--video-content {
+.preview--main {
+  padding: 32px 20px 16px 20px;
+}
+
+.preview--gallery {
+  padding: 33px 20px 39px 20px;
+}
+
+.preview--video {
   border-bottom: 0;
+  padding: 17px 20px 38px 20px;
+}
+
+.preview--form {
+  padding: 36px 20px 28px 20px;
 }
 
 .promo {
-  background-image: url("../img/jpg/back-desktop.jpg");
+  background-image: url("../../img/jpg/back-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #81b3d2;
@@ -548,7 +578,7 @@
   display: block;
   width: 100%;
   height: 57px;
-  background-image: url("../img/intro-triangle.svg");
+  background-image: url("../../img/intro-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -559,10 +589,10 @@
 }
 
 .radio-field__label {
+  color: #000000;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
 }
 
 .socials__list {
