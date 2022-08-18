@@ -433,7 +433,7 @@
 
 .checkbox-field__input:checked + .checkbox-field__mark {
   position: absolute;
-  background-image: url("/img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   content: "";
@@ -479,7 +479,7 @@
   height: 58px;
   display: block;
   background-color: #e6e6e6;
-  background-image: url("/img/phone.svg");
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -500,7 +500,7 @@
   height: 58px;
   display: block;
   background-color: #e6e6e6;
-  background-image: url("/img/mail.svg");
+  background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -933,13 +933,13 @@
   margin-right: 9px;
   border: none;
   background-color: transparent;
-  background-image: url("/img/like-icon-dark.svg");
+  background-image: url("../img/like-icon-dark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 @media screen and (min-width: 1200px) {
   .gallery-item__caption-rate-button {
-    background-image: url("/img/like-icon-light.svg");
+    background-image: url("../img/like-icon-light.svg");
   }
 }
 
@@ -1188,7 +1188,7 @@
 .main-promo {
   position: relative;
   min-height: 389px;
-  background-image: url("/img/jpg/back-mobile.jpg");
+  background-image: url("../img/jpg/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #81b3d2;
@@ -1204,7 +1204,7 @@
   display: block;
   width: 100%;
   height: 57px;
-  background-image: url("/img/intro-triangle-big.svg");
+  background-image: url("../img/intro-triangle-big.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -1371,7 +1371,7 @@
 }
 
 .promo {
-  background-image: url("/img/jpg/back-desktop.jpg");
+  background-image: url("../img/jpg/back-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #81b3d2;
@@ -1384,7 +1384,7 @@
   display: block;
   width: 100%;
   height: 57px;
-  background-image: url("/img/intro-triangle.svg");
+  background-image: url("../img/intro-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -1394,7 +1394,7 @@
     min-height: 290px;
   }
   .promo::after {
-    background-image: url("/img/intro-triangle-big.svg");
+    background-image: url("../img/intro-triangle-big.svg");
   }
 }
 
