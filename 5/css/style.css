@@ -399,12 +399,13 @@
   cursor: auto;
 }
 .button--feedback {
-  min-width: 281px;
+  max-width: 281px;
   padding: 18px 14px 14px 14px;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .button--feedback {
-    margin: 0;
+    min-width: 324px;
   }
 }
 .button--search {
@@ -506,6 +507,7 @@
 .text-field__input {
   width: 100%;
   padding: 12px;
+  margin: 0;
   color: black;
   background-color: #f2f2f2;
   border: 4px solid transparent;
@@ -599,12 +601,12 @@
 }
 @media screen and (min-width: 768px) {
   .feedback-form {
-    padding: 0 60px 0 60px;
+    padding: 0 60px 64px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feedback-form {
-    padding: 0 120px 0 120px;
+    padding: 0 120px 64px 120px;
   }
 }
 
@@ -628,7 +630,7 @@
   }
   .feedback-form__group:nth-of-type(1) {
     padding-right: 43px;
-    border-right: 1px solid #d8d8d8;
+    border-right: 1px solid #dbdbdb;
   }
   .feedback-form__group:nth-of-type(2) {
     padding-left: 44px;
@@ -650,6 +652,15 @@
   .feedback-form__group--wide {
     grid-column: 1/span 2;
   }
+  .feedback-form__group--wide::before {
+    position: absolute;
+    top: 13px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    content: "";
+  }
 }
 
 .feedback-form__button-wrapper {
@@ -663,6 +674,12 @@
     align-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .feedback-form__button-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
 
 .feedback-form__note {
   display: block;
@@ -671,6 +688,13 @@
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .feedback-form__note {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
 }
 
 .form-group {
@@ -1313,12 +1337,35 @@
   }
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.modal-container--closed {
+  display: none;
+}
+
 .modal-approve {
-  max-width: 640px;
-  padding: 39px 20px 20px 20px;
-  margin: 0 auto;
+  position: relative;
+  max-width: 320px;
+  padding: 39px 20px 128px 20px;
+  margin: auto;
   text-align: center;
-  background: linear-gradient(180deg, #ffffff 65%, #f2f2f2 35%);
+  background: white;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .modal-approve {
+    width: 640px;
+    padding: 53px 99px 176px 97px;
+  }
 }
 
 .modal-approve__title {
@@ -1330,26 +1377,43 @@
   line-height: 26px;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .modal-approve__title {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
 
 .modal-approve__approve-message {
   margin: 0;
-  margin-bottom: 50px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
+
+.modal-approve__wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0 20px;
+  background-color: #f2f2f2;
+}
 @media screen and (min-width: 768px) {
-  .modal-approve__approve-message {
-    margin-bottom: 97px;
+  .modal-approve__wrapper {
+    padding: 44px 0 44px;
   }
 }
 
 .modal-error {
   max-width: 400px;
   padding: 45px 42px 35px 41px;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .modal-error__title {
@@ -1613,12 +1677,19 @@
 }
 
 .textarea-field__input {
+  display: block;
   padding: 16px;
   width: 100%;
   font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   border: 0;
   box-sizing: border-box;
+}
+@media screen and (min-width: 1200px) {
+  .textarea-field__input {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .textarea-field__input::placeholder {
