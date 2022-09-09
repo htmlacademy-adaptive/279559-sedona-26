@@ -13,9 +13,11 @@
 .video-content__item {
   position: relative;
   width: 100%;
+  max-width: 800px;
   min-height: 177px;
   display: block;
   margin: 0 auto;
+  background-color: $primaryColor;
   background-image: url("../img/content/video-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;

@@ -1,9 +1,29 @@
 .location {
   padding-bottom: 10px;
   height: 350px;
+  background-image: url("../img/background/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url("../img/background/map-mobile@2x.jpg");
+  }
 
   @media screen and (min-width: $tablet-width) {
     padding-bottom: 0;
+    background-image: url("../img/background/map-tablet.jpg");
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../img/background/map-tablet@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    background-image: url("../img/background/map-desktop.jpg");
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../img/background/map-desktop@2x.jpg");
+    }
   }
 }
 
